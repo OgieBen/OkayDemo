@@ -7,7 +7,7 @@ apply plugin: 'kotlin-kapt'
 
 
 ext.installationId = '10000'
-ext.pubPssB64 = 'MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA494A0mHzkciBS0xsMCH9ZTp9SF/pwczKaXSSOfxghpSYzkcJktjozIwYn5MYN/tU5zHuPz1eN++K7bszsCGX5IMQSVrlL4aTIpF5kH9EM9eXmV4t+YfHoJLLs7eJuc4OckGyyHjMaTlvItRH3FPbwJtonCbxIIP9UqXUEeDB8Ltr2jHtnCgaf8A829uWf7Vy5rtj572YH45RTGdFDstdPSorgZ/GWMKBoevBUE4tRh7z/yVAFrooebPcMFOP5VUQwqnxM1GjUO6eARnL5QSu5DfMn9GrE+BwzKcMcxDgVwuKwyStmaSFTg0AVwUT/y0C3uAR6dex0wFuHS61gcZvMwIDAQAB'
+ext.pubPssB64 = 'MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAr71MZyS6SbkNmR9mS7TCKPUhn4j+A0Ju0y/vh2mpjkNzA++KGSrYAEvOUXuzhcUoP87jLymSQB/qH7KpCrXHyqAFcIBbdOGkJmrMGkhBpQmkMpeE9RSohTyIpoDT0Q6O5EN2BO2wk1NnfjTUQbdQ+5PK2rtJtfjKXUZBZ2Uy5qlzf/+yOQk5Qh6T5PjdipkYzYRPm7SDyhIUoEid4o3h/bfVZ36/zvxKZPxn3YY3A1307HsVOvxMSuoR69vebTypjlEltqB5h7GdesUuE1ACKowMdEKiL8CzjuEYXzVP4rzTNEa8rBdljtsKuNjXc829bl+3/qAJy+gjH9544DiefQIDAQAB'
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.2"
@@ -20,7 +20,7 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         buildConfigField "String", "PUB_PSS_B64", "\"$pubPssB64\""
         buildConfigField "String", "INSTALLATION_ID", "\"$installationId\""
-        buildConfigField "String", "SERVER_URL", "\"http://54.194.163.47:9080\""
+        buildConfigField "String", "SERVER_URL", "\"http://3.125.121.188:9080\""
     }
     dataBinding {
         enabled = true
